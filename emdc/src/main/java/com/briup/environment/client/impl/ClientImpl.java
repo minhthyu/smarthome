@@ -7,6 +7,7 @@ import com.briup.environment.conf.Configuration;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
@@ -21,23 +22,30 @@ public class ClientImpl implements Client {
     private int port;                     //客户端连接断开
     private String backupFilePath;        //客户端备份文件路径
     @Override
-    public void send(Collection<Environment> coll) throws Exception {
+    public void send(Collection<Environment> coll)  throws Exception{
 //        String ip = "127.0.0.1";
 //        int port = 9999;
-        Socket socket  = new Socket(this.ip, this.port);
-        /**
-         * 读取备份文件，如果不为空，则将文件内容加入此次发送队列中
-         */
-        Object load = backup.load(backupFilePath);
-        if (load != null){
-            if (load instanceof Collection){
-                for (Environment environment : ((Collection<Environment>) load)) {
-                    coll.add(environment);
+        Socket socket  = null;
+        try {
+            socket = new Socket(this.ip, this.port);
+            /**
+             * 读取备份文件，如果不为空，则将文件内容加入此次发送队列中
+             */
+            Object load = backup.load(backupFilePath);
+            if (load != null){
+                if (load instanceof Collection){
+                    for (Environment environment : ((Collection<Environment>) load)) {
+                        coll.add(environment);
+                    }
                 }
             }
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
+            objectOutputStream.writeObject(coll);
+        } catch (IOException e) {
+//            e.printStackTrace();
+            backup.backup(backupFilePath, coll, false);
+            logger.error("客户端发生错误");
         }
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
-        objectOutputStream.writeObject(coll);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         String flag = bufferedReader.readLine();
         if ("error".equals(flag)) {
