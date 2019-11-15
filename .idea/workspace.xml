@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="911d7669-6ade-4f0b-8f09-bf05fff968c5" name="Default Changelist" comment="" />
+    <list default="true" id="911d7669-6ade-4f0b-8f09-bf05fff968c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/ServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/ServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emdc/src/main/resources/backup/charNum.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emdc/src/main/resources/log/client.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emdc/src/main/resources/log/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emdc/src/main/resources/log/server.log" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/emdc/target/" />
@@ -17,25 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log4j.properties">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="104">
+              <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2777#3862#1" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/log/impl/LogImpl.java">
+        <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/server.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1051#1052#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -43,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/ClientImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+            <state relative-caret-position="167">
+              <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,54 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/ServerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="154">
+              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="100" column="47" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3849#3910#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/test/EnvironmentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/server.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/client.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -160,12 +124,12 @@
         <option value="$PROJECT_DIR$/emdc/src/main/resources/client.log" />
         <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/Server.java" />
         <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/test/EnvironmentTest.java" />
-        <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/GatherImpl.java" />
-        <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/ServerImpl.java" />
         <option value="$PROJECT_DIR$/emdc/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/log/impl/LogImpl.java" />
+        <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/GatherImpl.java" />
+        <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/ServerImpl.java" />
         <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/ClientImpl.java" />
         <option value="$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java" />
       </list>
@@ -269,27 +233,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="environment" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smarthome" type="462c0819:PsiDirectoryNode" />
-              <item name="emdc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smarthome" type="462c0819:PsiDirectoryNode" />
-              <item name="emdc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,16 +245,6 @@
               <item name="environment" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smarthome" type="462c0819:PsiDirectoryNode" />
-              <item name="emdc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smarthome" type="b2602c69:ProjectViewProjectNode" />
@@ -473,7 +406,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573438605497</updated>
       <workItem from="1573438610172" duration="36563000" />
-      <workItem from="1573544249593" duration="60145000" />
+      <workItem from="1573544249593" duration="64136000" />
     </task>
     <task id="LOCAL-00001" summary="LogImpl删除无用的包">
       <created>1573781475502</created>
@@ -503,43 +436,57 @@
       <option name="project" value="LOCAL" />
       <updated>1573786925413</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="second commit">
+      <created>1573787360010</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573787360010</updated>
+    </task>
+    <task id="LOCAL-00006" summary="备份模块的日志信息的完善">
+      <created>1573788316731</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573788316731</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EnvironmentTest_clientTest - 2019.11.14 at 20h 11m 01s.xml">
+    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 14h 39m 02s.xml">
       <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_clientTest - 2019.11.14 at 20h 13m 03s.xml">
-      <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EnvironmentTest_serverTest - 2019.11.14 at 20h 13m 13s.xml">
+    <history-entry file="EnvironmentTest_serverTest - 2019.11.15 at 14h 39m 08s.xml">
       <configuration name="EnvironmentTest.serverTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_serverTest - 2019.11.14 at 20h 13m 16s.xml">
-      <configuration name="EnvironmentTest.serverTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EnvironmentTest_clientTest - 2019.11.14 at 20h 14m 30s.xml">
+    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 14h 39m 15s.xml">
       <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_clientTest - 2019.11.14 at 20h 15m 37s.xml">
+    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 14h 39m 51s.xml">
       <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_serverTest - 2019.11.14 at 20h 26m 05s.xml">
+    <history-entry file="EnvironmentTest_serverTest - 2019.11.15 at 14h 41m 18s.xml">
       <configuration name="EnvironmentTest.serverTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 10h 55m 34s.xml">
+    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 14h 49m 01s.xml">
       <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_serverTest - 2019.11.15 at 10h 56m 50s.xml">
+    <history-entry file="EnvironmentTest_serverTest - 2019.11.15 at 14h 49m 23s.xml">
       <configuration name="EnvironmentTest.serverTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 10h 57m 26s.xml">
+    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 14h 50m 59s.xml">
+      <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EnvironmentTest_serverTest - 2019.11.15 at 14h 52m 50s.xml">
+      <configuration name="EnvironmentTest.serverTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EnvironmentTest_clientTest - 2019.11.15 at 14h 53m 07s.xml">
       <configuration name="EnvironmentTest.clientTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96708000" />
+    <option name="totallyTimeSpent" value="100699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,7 +502,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34814218" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34814218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -564,18 +511,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.39321074" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.39321074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.16265912" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50080776" side_tool="true" weight="0.3281471" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32956153" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -629,20 +576,15 @@
     <MESSAGE value="添加了客户端异常备份" />
     <MESSAGE value="second commit - 修改了入库模块的备份 解决了记录commit成功的条数" />
     <MESSAGE value="新生成的备份文件以及日志文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="新生成的备份文件以及日志文件" />
+    <MESSAGE value="second commit" />
+    <MESSAGE value="备份模块的日志信息的完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="备份模块的日志信息的完善" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="108" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -837,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/backup/charNum.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/client.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -936,21 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/GatherImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#deepCopy#0;class#GatherImpl#0" />
-            <element signature="method#deepCopy#0;class#GatherImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/log.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -961,20 +881,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/ClientImpl.java">
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/test/EnvironmentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+        <state relative-caret-position="223">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -990,36 +903,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/backup/charNum.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/GatherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="122" column="57" selection-start-line="122" selection-start-column="57" selection-end-line="122" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#deepCopy#0;class#GatherImpl#0" />
+            <element signature="method#deepCopy#0;class#GatherImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/backup/dbstore.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/ServerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="154">
+          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="100" column="47" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3849#3910#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/test/EnvironmentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/log.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/client.log">
       <provider selected="true" editor-type-id="text-editor">
@@ -1030,8 +954,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emdc/src/main/resources/log/server.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/client/impl/ClientImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emdc/src/main/java/com/briup/environment/server/impl/DBStoreImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2777#3862#1" />
+          </folding>
         </state>
       </provider>
     </entry>

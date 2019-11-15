@@ -79,9 +79,11 @@ public class ServerImpl implements Server {
             try {
                 environments = (Collection<Environment>) objectInputStream.readObject();
                 printWriter.println("success");
+                System.out.println("====");
                 try {
                     dbStore.saveDb(environments);
                 }catch (Exception e){
+
                 }
             } catch (Exception e) {
 //                e.printStackTrace();

@@ -50,7 +50,7 @@ public class DBStoreImpl implements DBStore {
         StringBuilder builder = new StringBuilder();
         int i = 0;
         int commitIndex = 0;
-        int batchNum = 50000;
+        int batchNum = 500;
         sql = "insert into e_detail_? values(?,?,?,?,?,?,?,?,?)";
         /**
          * 读取备份文件，如果不为空，则将文件内容加入此次入库集合中
@@ -88,6 +88,7 @@ public class DBStoreImpl implements DBStore {
                     preparedStatement.clearBatch();
                 }
             }
+//            int a = 1/0;     //测试入库操作发生异常情况
             if (i%batchNum != 0) {
                 preparedStatement.executeBatch();
                 connection.commit();
@@ -102,8 +103,8 @@ public class DBStoreImpl implements DBStore {
             for (int index = commitIndex; index < coll.size(); index++){
                 this.environments.add(((ArrayList<Environment>)coll).get(index));
                 backup.backup(backupFilePath, this.environments, false);
-                logger.debug("入库失败数据已备份到 " + backupFilePath + " 备份文件");
             }
+            logger.debug("入库失败数据已备份到 " + backupFilePath + " 备份文件");
         }finally {
             // 关闭资源
             closeResource(preparedStatement, connection);
