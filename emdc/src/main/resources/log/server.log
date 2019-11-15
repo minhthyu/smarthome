@@ -1,0 +1,3 @@
+[INFO]2019 十一月 14 20:13:58,275-com.briup.environment.server.impl.ServerImpl.reciver(ServerImpl.java:28)-服务器已启动
+[INFO]2019 十一月 14 20:14:30,006-com.briup.environment.server.impl.DBStoreImpl.saveDb(DBStoreImpl.java:104)-总共存储的数据条数:106866
+[INFO]2019 十一月 14 20:15:37,091-com.briup.environment.server.impl.DBStoreImpl.saveDb(DBStoreImpl.java:104)-总共存储的数据条数:0
