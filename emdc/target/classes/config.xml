@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<woss>
+	<server class="com.briup.environment.server.impl.ServerImpl">
+		<port>9999</port>
+	</server>
+	<dbstore class="com.briup.environment.server.impl.DBStoreImpl">
+		<backupFile>dbstore.bak</backupFile>
+	</dbstore>
+	<client class="com.briup.environment.client.impl.ClientImpl">
+		<ip>127.0.0.1</ip>
+		<port>9999</port>
+		<backupFile>client.bak</backupFile>
+	</client>
+	<gather class="com.briup.environment.client.impl.GatherImpl">
+		<src-file>src/main/resources/radwtmp</src-file>
+		<charNum>charNum.bak</charNum>
+	</gather>
+	<logger class="com.briup.environment.log.impl.LogImpl">
+		<log-properties>src/main/resources/log4j.properties</log-properties>
+	</logger>
+	<backup class="com.briup.environment.backup.impl.BackupImpl">
+		<path>src/main/resources/backup/</path>
+	</backup>
+</woss>
