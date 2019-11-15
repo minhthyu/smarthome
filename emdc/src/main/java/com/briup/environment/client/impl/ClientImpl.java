@@ -34,6 +34,7 @@ public class ClientImpl implements Client {
             Object load = backup.load(backupFilePath);
             if (load != null){
                 if (load instanceof Collection){
+                    logger.debug("加载客户端模块 " + backupFilePath + " 备份文件");
                     for (Environment environment : ((Collection<Environment>) load)) {
                         coll.add(environment);
                     }
@@ -50,7 +51,7 @@ public class ClientImpl implements Client {
         String flag = bufferedReader.readLine();
         if ("error".equals(flag)) {
             backup.backup(backupFilePath, coll, false);
-            logger.error("客户端传输数据到服务器端失败");
+            logger.debug("客户端传输数据到服务器端失败！" + "已备份数据到 " + backupFilePath + " 备份文件");
         }
 //        objectOutputStream.close();
 //        socket.close();

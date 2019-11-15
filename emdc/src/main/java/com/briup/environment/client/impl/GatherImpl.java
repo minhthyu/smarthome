@@ -56,6 +56,7 @@ public class GatherImpl implements Gather {
             //获取上次读取数据文件的字节数
             if (backup.load(bakFilePath) != null){
                 preCharNum = (Integer)(backup.load(bakFilePath));
+                logger.debug("加载采集模块 " + bakFilePath + " 文件");
                 //跳过上次读取的字节数，防止重复读取数据
                 bufferedReader.skip(preCharNum);
                 charNum += preCharNum;
@@ -119,6 +120,7 @@ public class GatherImpl implements Gather {
         }
         //已读取的字符数的备份
         backup.backup(bakFilePath, charNum, false);
+        logger.debug("以备份采集模块数据位置到 " + bakFilePath + " 备份文件");
         logger.info("湿度一共有:" + temperatureNum);
         logger.info("温度一共有:" + humidityNum);
         logger.info("光照强度一共有:" + lightIntensityNum);

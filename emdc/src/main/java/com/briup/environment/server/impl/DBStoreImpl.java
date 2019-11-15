@@ -58,6 +58,7 @@ public class DBStoreImpl implements DBStore {
         Object load = backup.load(backupFilePath);
         if (load != null){
             if (load instanceof Collection){
+                logger.debug("正在加载 " + backupFilePath + " 备份文件");
                 for (Environment environment : ((Collection<Environment>) load)) {
                     coll.add(environment);
                 }
@@ -101,6 +102,7 @@ public class DBStoreImpl implements DBStore {
             for (int index = commitIndex; index < coll.size(); index++){
                 this.environments.add(((ArrayList<Environment>)coll).get(index));
                 backup.backup(backupFilePath, this.environments, false);
+                logger.debug("入库失败数据已备份到 " + backupFilePath + " 备份文件");
             }
         }finally {
             // 关闭资源
