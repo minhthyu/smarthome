@@ -4,7 +4,6 @@ import com.briup.environment.conf.Configuration;
 import com.briup.environment.log.Log;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.slf4j.impl.Log4jLoggerFactory;
 
 import java.util.Properties;
 
