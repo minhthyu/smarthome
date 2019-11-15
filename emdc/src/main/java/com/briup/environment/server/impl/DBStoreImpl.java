@@ -48,7 +48,8 @@ public class DBStoreImpl implements DBStore {
     @Override
     public void saveDb(Collection<Environment> coll) throws Exception {
         StringBuilder builder = new StringBuilder();
-        int i = 1;
+        int i = 0;
+        int commitIndex = 0;
         int batchNum = 50000;
         sql = "insert into e_detail_? values(?,?,?,?,?,?,?,?,?)";
         /**
@@ -81,19 +82,23 @@ public class DBStoreImpl implements DBStore {
                 i++;
                 if (i%batchNum == 0) {
                     preparedStatement.executeBatch();
-//                connection.commit();
+                    connection.commit();
+                    commitIndex+=batchNum;
+                    preparedStatement.clearBatch();
                 }
             }
             if (i%batchNum != 0) {
                 preparedStatement.executeBatch();
                 connection.commit();
+                commitIndex+=i%batchNum;
+                preparedStatement.clearBatch();
             }
         }catch (Exception e){
             /**
              * 入库失败是进行失败部分数据的备份，以备下次入库时使用
              */
             this.environments = new ArrayList<>();
-            for (int index = i-1; index < coll.size(); index++){
+            for (int index = commitIndex; index < coll.size(); index++){
                 this.environments.add(((ArrayList<Environment>)coll).get(index));
                 backup.backup(backupFilePath, this.environments, false);
             }
@@ -101,7 +106,7 @@ public class DBStoreImpl implements DBStore {
             // 关闭资源
             closeResource(preparedStatement, connection);
         }
-        logger.info("总共存储的数据条数:" + (i-1));
+        logger.info("总共存储的数据条数:" + (commitIndex));
         DataSourceUtils.close(connection, preparedStatement, null);
     }
 
